@@ -1,0 +1,184 @@
+.next01
+{
+    margin: 10px;
+    width: 90%;
+    margin: auto;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* display: block; */
+}
+.next01 span 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: var(--pop-text);
+}
+.next01 small 
+{
+    /* display: block; */
+    font-size: 12px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+    gap: 30px;
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .grid-container .grid 
+   {
+    margin: auto;
+    border-radius: 10px;
+    /* background-color: var(--pink-color-button); */
+    background-color: pink;
+    font-size: 30px;
+    height: 250px;
+    /* width: 320px; */
+    overflow: hidden;
+    border: 1px solid var(--dark-blue);
+    transition: 0.3 ease-in-out;
+  }
+  .grid-container .grid:hover{
+    /* background-color: pink; */
+    background-color: var(--pink-color-button);
+  }
+.grid-container .grid .contss
+{
+    height: 100%;
+    text-align: left;
+    padding: 20px;
+    
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.grid-container .grid .contss .s1 
+{
+    /* justify-items: center; */
+}
+.grid-container .grid .contss .db_details
+{
+    /* justify-items: center; */
+
+}
+.grid-container .grid .contss .s1 .db_category 
+{
+    /* width: fit-content; */
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--text-color-light);
+    text-align: center;
+    /* background-color: green; */
+    text-transform: capitalize;
+}
+
+.grid-container .grid .contss .db_details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid-container .grid .contss .db_details .db_title a
+{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--dark-blue);
+    transition: 0.3s;
+}
+.grid-container .grid .contss .db_details .db_title a:hover 
+{
+    text-decoration: underline;
+}
+.grid-container .grid .contss .db_details .db_det1
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.grid-container .grid .contss .db_details p 
+{
+    font-size: 16px;
+}
+.grid-container .grid .contss .db_details p span {font-weight: 600;}
+.grid-container .grid .contss .db_details span {font-size: 16px;}
+body 
+{
+    color: rgb(59, 201, 66)
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .grid-container { gap: 10px; width: 100%;}
+    .grid-container .grid { height: 220px; }
+    .grid-container .grid .contss{padding: 10px;}
+    .grid-container .grid .contss .s1 .db_category {padding: 3px 7px; font-size: 12px;}
+    .grid-container .grid .contss .db_details .db_title a {font-size: 1.25em;}
+    .grid-container .grid .contss .db_details .db_det1 {margin-top: 10px;}
+    .grid-container .grid .contss .db_details .db_det1 p {display: none;}
+    .grid-container .grid .contss .db_details span {font-size: 12px;}
+}
+
+
+@media (max-width: 800px) {
+    .grid-container .grid { height: 150px; }
+    .grid-container { grid-template-columns: auto auto; gap: 20px;}
+    .grid-container .grid .contss .s1 .db_category {padding: 2px 7px;}
+    .grid-container .grid .contss .db_details .db_det1 p { font-size: 12px; }
+    .grid-container .grid .contss .db_details .to_off {display: none;}
+    .grid-container .grid .contss .db_details span {font-size: 10px;}
+
+}
+
+@media (max-width: 530px) {
+    .grid-container { grid-template-columns: auto;gap: 10px;}
+    .grid-container .grid {width: 100%; height: 90px; }
+    .grid-container .grid .contss { display: block; padding: 9px;}
+    .grid-container .grid .contss .db_details {margin: 0;}
+    .grid-container .grid .contss .db_details .db_title a {font-size: 1.12em;}
+    .grid-container .grid .contss .s1 .db_category {
+        font-size: 10px;
+        position: absolute;
+        }
+    .grid-container .grid .contss .db_details .to_date {margin: 0;}
+    .grid-container .grid .contss .db_details .db_det1 {margin-top: 5px; margin-left: auto;}
+
+
+    .grid-container .grid .contss
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+}
+
+.scroll_up 
+{
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    background: inherit;
+}
+.scroll_up ion-icon 
+{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    background-color: var(--pink-color-button);
+    border-radius: 50px;
+    border: 1px solid #fff;
+
+}

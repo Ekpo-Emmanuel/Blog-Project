@@ -1,0 +1,239 @@
+input.invalid,
+textarea.invalid,
+select.invalid,
+.match_error,
+.match_error:focus {
+	border-color: #ff7a7a;
+}
+
+
+
+.validation_error {
+	color: red;
+	font-size: 12px;
+	text-transform: capitalize;
+	position: absolute; left: 0;
+	}
+
+
+.add_blog_container .post_form input.invalid,
+.add_blog_container .post_form textarea.invalid,
+.add_blog_container .post_form select.invalid,
+.add_blog_container .post_form .match_error,
+.add_blog_container .post_form .match_error:focus {
+	border-color: #ff7a7a;
+}
+
+
+
+.add_blog_container
+{
+	position: relative;
+
+}
+
+.add_blog_container .title 
+{
+	margin-bottom: 40px;
+}
+.add_blog_container .title span 
+{
+	display: block;
+	font-size: 2em;
+	font-weight: 900;
+	font-family: var(--pop-text);
+	color: var(--dark-blue);
+}
+
+.add_blog_container .post_form  
+{
+	/* background-color: rgb(231, 201, 201); */
+}
+.add_blog_container .post_form  .pad 
+{
+	/* background-color: green; */
+	margin: 15px 0;
+}
+.add_blog_container .post_form  .pad label 
+{
+	font-size: 16px;
+}
+.add_blog_container .post_form  .pad .s1 
+{
+	/* display: flex; */
+	/* justify-content: space-around; */
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 30px;
+
+}
+@media (max-width: 600px) {
+	.add_blog_container .post_form  .pad .s1 
+	{
+		gap: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+    .add_blog_container .post_form input[type="submit"] {
+        width: 100%;
+    }
+}
+.add_blog_container .post_form  select
+{
+	width: 100%;
+}
+.add_blog_container .post_form  .pad .s1 input[type="text"]
+{
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	box-shadow: none;
+	border-radius: 10px;
+	background-color: #fff;
+	color: black;
+	border: 1px solid var(--dark-blue);
+}
+
+.add_blog_container .post_form  .email input[type="text"]
+{
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	box-shadow: none;
+	border-radius: 10px;
+	background-color: #fff;
+	color: black;
+	border: 1px solid var(--dark-blue);
+	transition: 0.3s;
+
+}
+.add_blog_container .post_form  .email textarea
+{
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	box-shadow: none;
+	border-radius: 10px;
+	background-color: #fff;
+	color: black;
+	border: 1px solid var(--dark-blue);
+	text-align: left;
+	transition: 0.3s;
+
+}
+.add_blog_container .post_form input[type="text"]:focus,
+.add_blog_container .post_form textarea:focus
+{
+	border-color: #00a183;
+}
+
+input,
+select,
+textarea {
+	margin: .7em 0;
+	padding: .8em;
+	font-size: 1em;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	outline: none;
+	box-shadow: 3px 3px 5px rgba(0,0,0,.15);
+}
+
+input[type="submit"] {
+	width: auto;
+	margin-bottom: 3em;
+	font-size: .8em;
+	padding: .8em 1.4em;
+	text-transform: uppercase;
+	transition: opacity .2s ease-in-out;
+	background-color: #666;
+	color: #fff;
+	border: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:active {
+	background-color: #00a183;
+	color: #fff;
+}
+
+
+.add_blog_container .post_form  .image
+{
+}
+
+.add_blog_container .post_form  .image
+{
+	width:250px;
+	background:#fff;
+	cursor: pointer;
+	position: relative;
+}
+.add_blog_container .post_form .image .preview 
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(280px);
+	overflow: hidden;
+	border-radius: 10px;
+	height: 150px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.add_blog_container .post_form  .image img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+  }
+
+.add_blog_container .post_form .image input {
+/* display:none; */
+	position: absolute;
+	top:0;
+	opacity: 0;
+}
+.add_blog_container .post_form .image label {
+	display:block;
+	height:45px;
+	margin-left: 25%;
+	line-height:50px;
+	text-align:center;
+	background: var(--pink-color-button);
+	color:var(--text-color-light);
+	font-size:15px;
+	text-transform:capitalize;
+	border-radius:5px;
+	cursor:pointer;
+	margin: auto;
+}
+
+.add_blog_container .post_form input[type="submit"] {
+	display:block;
+	height:45px;
+	text-align:center;
+	background: var(--dark-blue);
+	color:var(--text-color-light);
+	font-size:15px;
+	text-transform:capitalize;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+.add_blog_container .post_form  .pad .s1 .dd,
+.add_blog_container .post_form  .pad .dd
+{
+	position: relative;
+}
+.val_error
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	transform: translateY(5px);
+	color: red;
+	font-size: 10px;
+}

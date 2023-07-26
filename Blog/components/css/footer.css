@@ -1,0 +1,179 @@
+.footer 
+{
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+
+
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.footer form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer form span
+{
+    display: block;
+    font-size: 2.4em;
+    font-weight: 500;
+    letter-spacing: -2px;
+    font-family: var(--pop-text);
+    color: var(--text-color-light);
+    padding: 20px;
+}
+.footer form label 
+{
+    display: block;
+    color: var(--text-color-light);
+    opacity: .6;
+}
+
+.footer form .email_container 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    margin-top: 30px;
+}
+.footer form .email_container input 
+{
+    box-sizing: border-box;
+    width: 500px;
+    padding: 14px 26px;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.footer form .email_container button
+{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    padding: 14px 26px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--pink-color-button);
+    color: var(--text-color-light);
+}
+.footer form .slinks
+{
+    display: flex;
+    margin-top: 30px;
+}
+.footer form .slinks ion-icon
+{
+    margin: 6px;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: var(--text-color-light);
+}
+
+.footer form .slinks a .twitter {background-color: #1DA1F2;}
+.footer form .slinks a .github {background-color: #130636;}
+.footer form .slinks a .instagram {background-color: #E1306C;}
+.footer form .slinks a .tiktok {background-color: black;}
+
+
+.footer .sec2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: grey; */
+    padding: 0px 30px;
+    margin-top: 50px;
+}
+.footer .sec2 .name 
+{
+}
+.footer .sec2 .name span 
+{
+    color: var(--text-color-light);
+}
+.footer .sec2 ul 
+{
+    display: flex;
+    flex-direction: row;
+}
+.footer .sec2 ul a 
+{
+    margin: 0px 20px;
+    color: var(--text-color-light);
+}
+
+
+@media (max-width: 790px) {
+    .footer { padding-bottom: 20px; }
+    .footer .sec2 .name {font-size: 12px;}
+    .footer .sec2 ul a {font-size: 12px; margin: 0 10px;}
+    .footer form .slinks ion-icon {padding: 10px;}
+    .footer form .email_container input 
+    {
+        width: 400px;
+        padding: 0px 20px;
+    }
+    .footer form .email_container button
+    {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) 
+{
+    .footer {
+        padding: 10px;
+    }
+    .footer form { align-items: flex-start; }
+    .footer form .email_container { flex-direction: column;  }
+    .footer form .email_container input
+    {
+        padding: 10px 20px;
+        border-radius: 50px;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    .footer form .email_container button 
+    {
+        margin-top: 10px;
+        width: 100px;
+        border-radius: 50px;
+    }
+    .footer form span { padding-left: 0; }
+    footer form label 
+    {
+        font-size: 12px;
+    }
+    .footer .sec2
+    {
+        flex-direction: column-reverse;
+        padding: 0 1px;
+        
+    }
+    .footer .sec2 ul 
+    {
+        padding: 0;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .footer .sec2 ul a 
+    {
+        margin: 5px 0;
+    }
+    .footer .sec2
+    {
+        margin-top: 20px;
+    }
+    .footer form span
+    {
+        font-size: 1.7em;
+    }
+}

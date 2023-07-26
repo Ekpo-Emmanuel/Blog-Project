@@ -1,0 +1,153 @@
+.nav 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+
+
+.nav .menu 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    place-content: center;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin-left: 50px;
+}
+.nav .menu .bar_cont
+{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+}
+.nav .menu .bar_cont >span 
+{
+    height: 2px;
+    background-color: var(--text-color-light);
+    margin: 2.3px;
+}
+.nav .menu .bar_cont .bar2 { width: 70%; }
+.nav .menu .bar_cont .bar3 { width: 50%; }
+.nav .menu .logo 
+{
+    display: block;
+    margin-left: 10px;
+    color: var(--text-color-light);
+}
+.nav .menu:hover 
+{
+    background-color: rgb(20, 20, 20);
+}
+
+.nav .links 
+{
+    /* background-color: red; */
+    padding: 5px;
+}
+.nav .links .n_logo {display: none;}
+.nav .links ul 
+{
+    display: flex;
+    flex-direction: row;
+}
+.nav .links ul li a 
+{
+    word-spacing: -4px;
+    display: block;
+    text-align: center;
+    padding: 6px 15px;
+    color: var(--text-color-light);
+}
+
+nav .search {
+    display: flex;
+    margin-right: 50px;
+}
+nav .search a
+{
+    background-color: var(--pink-color-button);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 15px;
+    margin: 0px 5px;
+    color: var(--text-color-light);
+}
+.nav .search .sub i,
+.nav .search .sub ion-icon 
+{
+    color: var(--text-color-light);
+}
+.nav .search .sub span 
+{
+    margin-left: 10px;
+    color: var(--text-color-light);
+}
+
+@media (max-width: 1028px) {
+    .nav .search {
+        margin-right: 10px;
+    }
+    .nav .menu 
+    {
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 940px) {
+    .nav {
+        /* display: block; */
+        padding: 0px;
+    }
+    .nav .menu 
+    {
+        /* background-color: red; */
+        flex-direction: row;
+        justify-content: unset;
+        align-items: flex-start;
+    }
+    .nav .menu .bar_cont > span { height: 3px; }
+    .nav .menu .logo {display: none;}
+    .nav .links .n_logo {display: block;}
+    .nav .search .sub {display: none;}
+
+    .nav .links .n_logo a{
+        font-family: var(--pop-text);
+        font-size: 2em;
+        font-weight: 900;
+    color: var(--text-color-light);
+    }
+    .nav .links ul {display: none;}
+
+
+}
+
+
+
+
+@media (max-width: 500px) {
+    .nav .menu 
+    {
+        margin-left: 10px;
+        display: unset;
+        padding: 0;
+    }
+    .nav .menu:hover 
+    {
+        background-color: transparent;
+    }
+}

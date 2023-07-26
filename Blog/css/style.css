@@ -1,0 +1,397 @@
+:root {
+  --theme-blue: 200, 80%, 38%;
+  --theme-red: 350, 63%, 52%;
+  --theme-pink: 350, 100%, 69%;
+  --theme-black: 0, 7%, 9%;
+  --theme-white: 0, 0%, 100%;
+  --theme-light: 40, 100%, 97%;
+  --theme-dark: 0, 7%, 29%;
+  color: hsl(var(--theme-dark));
+  background: hsl(var(--theme-light));
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: hsl(var(--theme-blue));
+  transition: color 150ms, text-decoration-color 150ms;
+}
+a:active, a:visited {
+  color: hsl(var(--theme-blue));
+}
+a:hover {
+  color: hsl(var(--theme-red));
+}
+a:focus, a:hover {
+  text-decoration-color: transparent;
+}
+
+a:focus,
+[tabindex="-1"]:focus {
+  outline: 0.125rem solid hsl(var(--theme-pink));
+}
+a:focus:not(:focus-visible),
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.Carousel {
+  --carousel-gap: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: var(--carousel-gap);
+  overflow-y: hidden;
+  overflow-x: auto;
+  position: relative;
+  scroll-behavior: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  height: 20vw;
+  outline: none !important;
+  min-height: 20rem;
+  max-height: 30rem;
+}
+.Carousel::-webkit-scrollbar {
+  display: none;
+}
+.Carousel .Card {
+  aspect-ratio: var(--card-ratio);
+  flex: 1 0 auto;
+  min-height: 100%;
+  scroll-snap-align: start;
+}
+.Carousel .Card__media {
+  aspect-ratio: auto;
+}
+.Carousel > div:empty {
+  position: relative;
+}
+.Carousel > div:empty:first-child {
+  inset-inline-start: 10%;
+  margin-inline-end: calc(-1 * var(--carousel-gap));
+}
+.Carousel > div:empty:last-child {
+  inset-inline-end: 10%;
+  margin-inline-start: calc(-1 * var(--carousel-gap));
+}
+
+.Carousel--single .Card {
+  --card-ratio: auto;
+  flex: 1 0 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Carousel {
+    scroll-behavior: auto;
+  }
+}
+@supports not (aspect-ratio: 1/1) {
+  .Carousel .Card__media {
+    padding-block-end: 0 !important;
+  }
+  .Carousel .Card__image {
+    position: relative !important;
+  }
+}
+.Dots {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.Dot {
+  border-radius: 100%;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: relative;
+}
+.Dot::after {
+  background: currentColor;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 0.375rem;
+  width: 0.375rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.Dot--active {
+  color: hsl(var(--theme-pink)) !important;
+}
+
+.Pagination {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.Pagination .s1 
+{
+  display: flex;
+}
+.Pagination .Arrow:first-of-type {
+  /* margin-inline-end: auto;
+  order: -1; */
+}
+.Pagination .Arrow:last-of-type {
+  /* margin-inline-start: auto;
+  order: 1; */
+}
+
+.Arrow {
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0.125rem;
+  cursor: pointer;
+  color: hsl(var(--theme-blue));
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  opacity: 1;
+  padding: 0.5rem;
+  transition: opacity 150ms, color 150ms;
+  width: 3rem;
+}
+.Arrow:hover {
+  color: hsl(var(--theme-red));
+}
+.Arrow:focus {
+  color: hsl(var(--theme-pink));
+  outline: none;
+}
+.Arrow:focus svg {
+  box-shadow: 0 0 0 0.125rem hsla(var(--theme-white), 1), 0 0 0 0.25rem currentColor;
+}
+.Arrow:focus:not(:focus-visible) {
+  color: hsl(var(--theme-red));
+}
+.Arrow:focus:not(:focus-visible) svg {
+  box-shadow: none;
+}
+.Arrow[disabled] {
+  color: hsl(var(--theme-dark));
+  opacity: 0.4;
+  pointer-events: none;
+}
+.Arrow svg {
+  border-radius: 100%;
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+  transition: box-shadow 150ms;
+}
+[dir=rtl] .Arrow svg {
+  transform: scaleX(-1);
+}
+
+.Hidden {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+:root {
+  --card-link-color: var(--theme-blue);
+  --card-hover-color: var(--theme-red);
+  --card-focus-color: var(--theme-pink);
+  --card-inner-focus-color: var(--theme-white);
+  --card-shadow-color: var(--theme-black);
+  --card-foreground-color: var(--theme-dark);
+  --card-background-color: var(--theme-dark);
+}
+
+.Card {
+  --card-ratio: auto 1/1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: [media-start] auto [media-end main-start] auto [main-end];
+  max-width: 100%;
+  position: relative;
+}
+
+.Card__media {
+  aspect-ratio: var(--card-ratio);
+  background: hsla(var(--card-background-color), 0.5);
+  border-radius: 1rem;
+  grid-column: 1/-1;
+  grid-row: media-start/media-end;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+.Card__media > * {
+  border-radius: inherit;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.Card__main {
+  align-self: end;
+  color: hsl(var(--card-foreground-color));
+  grid-column: 1/-1;
+  grid-row: main-start/main-end;
+  padding: 1.25rem;
+}
+.Card__main [href]:not(.Card__link) {
+  position: relative;
+  z-index: 2;
+}
+.Card__main > * {
+  margin: 0;
+}
+
+.Card__link {
+  color: hsl(var(--card-link-color));
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-color: hsla(var(--card-link-color), 0.2);
+  text-decoration-thickness: 0.125rem;
+  text-decoration-skip: ink;
+  text-decoration-skip-ink: all;
+  text-decoration-offset: 100%;
+}
+.Card__link::after {
+  border: 0.125rem solid hsl(var(--card-focus-color));
+  box-shadow: inset 0 0 0 0.125rem hsla(var(--card-inner-focus-color), 1);
+  border-radius: 1rem;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: border-color 150ms, opacity 150ms;
+  z-index: 1;
+}
+.Card__link:hover, .Card__link:focus {
+  text-decoration-color: hsla(var(--card-hover-color), 1);
+}
+.Card__link:hover::after, .Card__link:focus::after {
+  opacity: 1;
+}
+.Card__link:focus {
+  outline: none;
+  text-decoration-color: currentColor;
+}
+
+.Card__heading {
+  line-height: 1.25;
+  margin-block-end: 0.5rem;
+}
+
+.Card--border .Card__link::after {
+  opacity: 1;
+}
+.Card--border .Card__link:not(:focus):not(:hover)::after {
+  border-color: hsla(var(--card-foreground-color), 0.5);
+}
+
+.Card--overlay {
+  --card-shadow-color: var(--theme-black);
+  --card-foreground-color: var(--theme-white);
+  --card-background-color: var(--theme-dark);
+  --card-link-color: var(--theme-white);
+  --card-hover-color: var(--theme-white);
+  grid-template-rows: [media-start] 1fr [overlay-start] 1rem [main-start] auto [main-end overlay-end media-end];
+}
+.Card--overlay::before {
+  background: linear-gradient(to top, hsla(var(--card-shadow-color), 0.8) 20%, hsla(var(--card-shadow-color), 0.3) 60%, transparent);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  content: "";
+  display: block;
+  grid-column: 1/-1;
+  grid-row: overlay-start/overlay-end;
+  overflow: hidden;
+}
+.Card--overlay .Card__main p {
+  text-shadow: 0 0.0625rem 0.0625rem hsl(var(--card-shadow-color));
+}
+.Card--overlay .Card__main a {
+  color: hsl(var(--card-link-color));
+}
+.Card--overlay .Card__main a:active, .Card--overlay .Card__main a:visited {
+  color: hsl(var(--card-link-color));
+}
+.Card--overlay .Card__main a:hover, .Card--overlay .Card__main a:focus {
+  color: hsl(var(--card-hover-color));
+}
+
+.Card--square {
+  --card-ratio: auto 16/9;
+}
+
+.Card--photo {
+  --card-ratio: auto 16/9;
+}
+
+.Card--portrait {
+  --card-ratio: auto 3/4;
+}
+
+.Card--wide {
+  --card-ratio: auto 16/9;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  /* max-width: 100%; */
+}
+
+.Main {
+  margin: 0 auto;
+  max-width: calc(90rem + 10vw);
+  padding: 1.5rem 5vw;
+  width: 100%;
+}
+.Main > *:first-child {
+  margin-block-start: 0;
+}
+.Main > h1, .Main > h2, .Main > h3 {
+  line-height: 1.25;
+  margin-block: 1.5rem 1rem;
+}
+.Main > ul {
+  margin-block: 1.5rem;
+  padding-inline: 2rem 0;
+}
+.Main > ul li {
+  margin-block: 0.5rem;
+}
+.Main > p {
+  margin-block: 1rem;
+}
+.Main a:not([class]) {
+  font-weight: 500;
+}
