@@ -1,4 +1,4 @@
-<div align="center" id="top"> 
+<div align="center" id="top" style="display: flex;">  
   <img src="./Blog/images/p1.gif" alt="Blog Project" width="600px" />
   <img src="./Blog/images/p8.png" alt="REsponsive" />
 
