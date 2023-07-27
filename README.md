@@ -1,5 +1,7 @@
 <div align="center" id="top"> 
   <img src="./Blog/images/p1.gif" alt="Blog Project" width="600px" />
+  <img src="./Blog/images/p8.png" alt="REsponsive" />
+
 
   &#xa0;
   <a href="https://youtu.be/cm8CIGR8p2M"> Video Description 🚀</a><br/>
