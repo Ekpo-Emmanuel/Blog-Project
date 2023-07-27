@@ -1,6 +1,7 @@
 <div align="center" id="top"> 
   <img src="./Blog/images/p1.gif" alt="Blog Project" width="600px" />
-<span>Youtube: </span>[https://youtu.be/cm8CIGR8p2M]
+  <a href="https://youtu.be/cm8CIGR8p2M"> Video Description 🚀</a>
+
 
   &#xa0;
 
