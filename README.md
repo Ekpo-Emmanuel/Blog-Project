@@ -17,7 +17,7 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Ekpo-Emmanuel/blog-project?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/Ekpo-Emmanuel/blog-project?color=56BEB8">
+  <!-- <img alt="License" src="https://img.shields.io/github/license/Ekpo-Emmanuel/blog-project?color=56BEB8"> -->
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/blog-project?color=56BEB8" /> -->
 
@@ -103,7 +103,7 @@ $ localhost/Blog
 # The server will initialize in the <http://localhost/Blog>
 ```
 
-## :memo: License ##
+<!-- ## :memo: License ## -->
 
 <!-- This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file. -->
 
