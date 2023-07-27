@@ -1,5 +1,5 @@
 <div align="center" id="top" style="display: flex;">  
-  <img src="./Blog/images/p1.gif" alt="Blog Project" width="400px" />
+  <img src="./Blog/images/p1.gif" alt="Blog Project" width="500px" />
   <img src="./Blog/images/p8.png" alt="REsponsive" height="300px"/>
 
 
