@@ -4,8 +4,8 @@
 
 
   &#xa0;
-  <a href="https://youtu.be/cm8CIGR8p2M"> Video Description 🚀</a><br/>
-  <a href="http://idea-vault.free.nf/Blog/">Website active in 72 hours 🚀</a>
+  <a href="https://youtu.be/cm8CIGR8p2M" target="_blank"> Video Description 🚀</a><br/>
+  <a href="http://idea-vault.free.nf/Blog/" target="_blank">Website active in 72 hours 🚀</a>
 </div>
 
 <h1 align="center">Idea Vault</h1>
