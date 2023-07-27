@@ -1,6 +1,1 @@
-![Alt Text](./images/p1.gif)
-![Alt Text](./images/p2.png)
-![Alt Text](./images/p3.png)
-![Alt Text](./images/p4.png)
-![Alt Text](./images/p5.png)
-![Alt Text](./images/p6.png)
+
