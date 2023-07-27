@@ -2,7 +2,7 @@
   <img src="./Blog/images/p1.gif" alt="Blog Project" width="600px" />
 
   &#xa0;
-  <a href="https://youtu.be/cm8CIGR8p2M"> Video Description 🚀</a>
+  <a href="https://youtu.be/cm8CIGR8p2M"> Video Description 🚀</a><br/>
   <a href="http://idea-vault.free.nf/Blog/">Website active in 72 hours 🚀</a>
 </div>
 
