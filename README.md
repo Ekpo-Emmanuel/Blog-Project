@@ -5,7 +5,7 @@
 
   &#xa0;
   <a href="https://youtu.be/cm8CIGR8p2M" target="_blank"> Video Description 🚀</a><br/>
-  <a href="[http://idea-vault.free.nf/Blog/](https://ideavault.000webhostapp.com/Blog/)" target="_blank">Website🚀</a>
+  <a href="https://ideavault.000webhostapp.com/Blog/" target="_blank">Website🚀</a>
 </div>
 
 <h1 align="center">Idea Vault</h1>
