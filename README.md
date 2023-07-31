@@ -69,6 +69,9 @@ Dive into the Idea Vault and unlock the potential of your mind. Share your thoug
 :heavy_check_mark: Build Connections;\
 :heavy_check_mark: Customizable Interface;\
 :heavy_check_mark: Article AI Generator;\
+:heavy_check_mark: Full Article Management System;\
+:heavy_check_mark: Social media;\
+:heavy_check_mark: Careers;
 
 
 ## :rocket: Technologies ##
