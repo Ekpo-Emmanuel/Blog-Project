@@ -111,7 +111,7 @@ $ localhost/Blog
 <!-- This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file. -->
 
 
-Made with :heart: by <a href="https://github.com/Ekpo-Emmanuel" target="_blank">Emmanuel Ekpo</a>
+Made by :heart: <a href="https://github.com/Ekpo-Emmanuel" target="_blank">Emmanuel Ekpo</a>
 
 &#xa0;
 
